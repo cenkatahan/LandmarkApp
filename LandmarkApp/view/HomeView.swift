@@ -22,6 +22,11 @@ struct HomeView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 100, height: 50)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .overlay(content: {
+                                RoundedRectangle(cornerRadius: 10)
+                                .stroke(.gray, lineWidth: 2)
+                            })
                             .padding(.trailing, 12)
                         
                         Text(landmark.name).font(.title)
