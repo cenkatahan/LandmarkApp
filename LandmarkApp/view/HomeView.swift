@@ -29,7 +29,7 @@ struct HomeView: View {
                 }
                 Spacer()
             }
-        }.navigationTitle(Text("Home"))
+        }.navigationTitle(Text("Home")).padding(.horizontal, 16)
         
         Spacer()
     }
